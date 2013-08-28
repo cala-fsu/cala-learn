@@ -1,0 +1,111 @@
+/* This is where we put our custom changes. */
+
+/*@our_base_color: #f938ab;
+
+body {
+	background-color: @our_base_color;
+}
+
+#short-description {
+	h2 {
+		color: @our_base_color;
+		.hide-text();
+	}
+}*/
+
+header {
+	@media(max-width: @screen-xs-max) {
+		background: url("../images/ed_background.jpg") no-repeat;
+		background-size: 800px 500px;
+	}
+	@media(min-width: @screen-sm) {
+		background: #666;
+		background-size: 1199px 800px;
+	}
+	@media(min-width: @screen-lg) {
+		background: url("../images/rainbow_dash_reading_by_lemonlimeman-d4hx588.gif") repeat-x;
+		background-size: 1600px 1000px;
+	}
+	.container-fixed();
+	
+	#masthead {
+		
+		@media(min-width: @screen-md) {
+			width: 800px;
+			.center-block();
+			/*background-color: #0ff;*/
+		}
+		.make-row();
+		
+		#brand {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			
+			@media(min-width: @screen-sm) {
+				.make-sm-column(6)
+			}
+			
+			@media(min-width: @screen-lg) {
+				.make-lg-column(5);
+				margin-top: 90px;
+			}
+
+			img {
+				.center-block();
+			}
+			#logo {
+				width: 125px;
+				height: 125px;
+			}
+			#cala-learn {
+				width: 290px;
+				height: 72px;
+			}
+			#app-store {
+				padding-top: 40px;
+				width: 214px;
+				height: 104px;
+			}
+		}
+		#phone {
+			.responsive-invisibility();
+
+			@media(min-width: @screen-sm) {
+				.responsive-visibility();
+				.make-sm-column(6);
+				padding-top: 30px;
+				#phone-image {
+					width: 320px;
+					height: 394px;
+				}
+			}	
+			@media(min-width: @screen-lg) {
+				.make-lg-column(7);
+				#phone-image {
+				width: 420px;
+				height: 517px;
+				}	
+			}
+		}
+	}
+}
+
+#short-description {
+	
+}
+
+main {
+
+	#modules {
+		.make-row();
+		#reading-module {
+	    	.make-md-column(6);
+		}
+		#els-module {
+	    	.make-md-column(6);
+	  	}
+	}
+}
+footer {
+	.container-fixed();
+}
