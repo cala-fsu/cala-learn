@@ -1,20 +1,225 @@
-/*!
- * The custom bits for Bootstrap v3.0.0
- *
- * Copyright 2013 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world by @mdo and @fat.
- */
+/* Applies to every device, but design for phone */
 
-/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
-
-@font-face {
-	font-family: "MyriadPro-Light";
-	src: url(../fonts/MyriadPro-Light.otf);
+h2 {
+	font-size: 26px;
+	font-weight: 300;
 }
 
+h3 {
+	font-size: 22px;
+	font-weight: 300;	
+}
+
+.jumbotron {
+	background: url(../images/ed_background.jpg);
+	background-size: 600px 400px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+}
+
+.jumbotron .container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+img#logo {
+	width: 125px;
+	height: 125px;
+}
+
+img#cala-learn {
+	width: 300px;
+	height: 76px;	
+}
+
+img#app-store {
+	padding-top: 40px;
+	width: 214px;
+	height: 104px;
+}
+
+div#app-in-phone {
+	display: none;
+}
+
+#short-description {
+	background-color: #FB1D69;
+	color: #fff;
+}
+
+#modules {
+}
+
+#modules p, #modules h3, #modules h4 {
+	text-align: left;
+}
+
+.cl-badge {
+	width: 140px;
+	height: 140px;
+}
+
+footer {
+	background-color: #6296F4;
+	color: #fff;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 480px) {
+  /* 480 =============== iphone landscape ================ */
+	
+	div#app-in-phone {
+		display: normal;
+	}
+}
+@media only screen and (min-width: 600px) {
+  /* 600 ================================================= */
+}
+@media only screen and (min-width: 768px) {
+  /* 768 =============== ipad portait ==================== */
+}
+@media only screen and (min-width: 992px) {
+  /* 992 ================================================= */
+}
+@media only screen and (min-width: 1382px) {
+  /* 1382 ================================================ */
+  body {
+    max-width: 1440px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* 2x =================================================== */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#ELS, #reading {
+	float: right;
+	display: inline;
+	margin-left: 10px;
+}
+
+#apps-container {
+	height: 500px;
+}
+
+.col-lg-4-fix {
+	padding-left: 20px;
+	padding-right: 20px;
+}*/
+/*.jumbotron.container {
+	max-width: 600px;
+	margin: 0px auto;
+}*/
+
+/*header {
+	height: 400px;
+	background: url(../images/ed_background.jpg);
+	background-size: 600px 400px;
+	padding-top: 30px;
+	display: block;
+}*/
+
+/*#cala-learn-container {
+	max-width: 600px;
+	position: relative;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#cala-learn-container img {
+	display: block;
+	margin: 0px auto;
+}*/
+
+/*h2, h3 {
+	text-align: center;
+}
+
+h2, h3, h4 {
+	font-family: "Open Sans";
+}*/
+
+/*#short-description {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	padding-right: 10%;
+	padding-left: 10%;
+	background-color: #FB1D69;
+	color: #fff;
+}
+
+#short-description h2 {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.marketing {
+	padding: 3px;
+	margin: 0 auto;
+}
+
+#apps-container {
+	width: 100%;
+	position: center;
+	height: 850px;
+}
+
+.col-lg-4-fix {
+	width: 100%;
+	text-align: left;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+#ELS {
+	width: 200px;
+	height: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#reading {
+	width: 140px;
+	height: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+footer .whole-width-container {
+	margin-top: 40px;
+	background-color: #6296F4;
+}
+
+footer .whole-width-container .featurette-heading {
+	color: #fff;
+	font-size: 20px;
+	padding: 20px 20px 20px 20px;
+}*/
+
+/*
 h1 {
 	margin-right: -3000px;
 	float: right;
@@ -22,7 +227,6 @@ h1 {
 
 h2 {
 	text-align: center;
-	/*max-width: 1024px;*/
 }
 
 h3 {
@@ -30,9 +234,11 @@ h3 {
 }
 
 .col-lg-4-fix {
-	width: 400px;
-	border-left: 1px solid #FB1D69;
+	width: 460px;
+	border-left: 1px solid #ddd;
 	text-align: left;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 .whole-width-container {
@@ -65,7 +271,7 @@ header #container-to-center .container-left {
 }
 
 header #container-to-center .container-right {
-	width: 420px; /*doooooood*/
+	width: 420px;
 	margin-left: 100px;
 	float: left;
 }
@@ -80,21 +286,21 @@ header #container-to-center .container-left img {
 }
 
 .featurette-heading {
-	font-family: "MyriadPro-Light";
+	font-family: "Open Sans";
 	font-size: 50px;
 	font-weight: 300;
 	color: #2E3E50;
-	line-height: 1;
+	line-height: 1.2;
 	text-align: center;
 }
 
 .whole-width-container .featurette-heading {
 	color: #fff;
-	font-size: 35px;
+	font-size: 32px;
 }
 
 .featurette-heading-redux {
-	font-family: "MyriadPro-Light";
+	font-family: "Open Sans";
 	font-size: 30px;
 	font-weight: 200;
 	color: #6296F4;
@@ -107,12 +313,25 @@ footer .whole-width-container {
 
 footer .whole-width-container .featurette-heading {
 	color: #fff;
-	font-size: 35px;
+	font-size: 32px;
 	padding-bottom: 80px;
 }
+*/
+/* CORRECTS FOR VARYING BROWSER WIDTH */
+/*
+@media (max-width: 1199px) {
 
+.col-lg-4-fix {
+	width: 480px;
+	border-left: none;
+	text-align: left;
+	padding-right: 0px;
+	padding-left: 0px;
+}
 
+#container-to-center {
+	height: 900px;
+}
 
-
-
-
+}
+*/
