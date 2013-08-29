@@ -13,6 +13,42 @@ body {
 	}
 }*/
 
+h2 {
+	color: #fff;
+	margin-top: 0px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	.center-block();
+	@media(max-width: @screen-xs-max) {
+		font-size: 20px;
+	}
+	@media(min-width: @screen-sm) {
+		font-size: 30px;
+		width: 700px;
+	}
+	@media(min-width: @screen-md) {
+		font-size: 35px;
+		width: 900px;
+	}
+	@media(min-width: @screen-lg) {
+		font-size: 40px;
+		width: 1200px;
+	}
+}
+
+h3 {
+	font-family: "Open Sans";
+	font-weight: 700;
+}
+
+h4 {
+	
+}
+
+h5 {
+	
+}
+
 header {
 	@media(max-width: @screen-xs-max) {
 		background: url("../images/ed_background.jpg") no-repeat;
@@ -91,7 +127,17 @@ header {
 }
 
 #short-description {
-	
+	background-color: #FB1D69;
+	text-align: center;
+	@media(max-width: @screen-xs-max) {
+		padding: 15px 15px 15px 15px;
+	}
+	@media(min-width: @screen-sm) {
+		padding: 20px 15px 20px 15px;
+	}
+	@media(min-width: @screen-lg) {
+		padding: 25px 15px 25px 15px;
+	}
 }
 
 main {
@@ -104,6 +150,11 @@ main {
 		#els-module {
 	    	.make-md-column(6);
 	  	}
+		#cl-badge {
+			width: 200px;
+			height: 148px;
+			.center-block();
+		}
 	}
 }
 footer {
