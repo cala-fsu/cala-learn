@@ -5971,6 +5971,19 @@ h2 {
     font-size: 50px;
   }
 }
+footer #short-description h2 {
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  footer #short-description h2 {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  footer #short-description h2 {
+    padding-top: 40px;
+  }
+}
 h3 {
   font-family: "Open Sans";
   font-weight: 700;
@@ -6177,6 +6190,10 @@ tdheader #masthead #phone {
     padding: 25px 15px 25px 15px;
   }
 }
+footer #short-description {
+  background-color: #6296F4;
+  padding-bottom: 15px;
+}
 main #modules {
   margin-left: -15px;
   margin-right: -15px;
@@ -6272,6 +6289,8 @@ footer {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 footer:before,
 footer:after {
@@ -6296,4 +6315,9 @@ footer:after {
 }
 footer:after {
   clear: both;
+}
+footer p {
+  text-align: left;
+  color: #fff;
+  font-size: 10px;
 }
