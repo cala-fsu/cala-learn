@@ -21,6 +21,7 @@ h2 {
 	.center-block();
 	@media(max-width: @screen-xs-max) {
 		font-size: 20px;
+		font-weight: 400;
 	}
 	@media(min-width: @screen-sm) {
 		font-size: 30px;
@@ -33,6 +34,20 @@ h2 {
 	@media(min-width: @screen-lg) {
 		font-size: 40px;
 		width: 1200px;
+	}
+}
+
+#modules h2 {
+	color: #2E3E50;
+	font-size: 40px;
+	font-weight: 300;
+	.center-block();
+	letter-spacing:-0.05em;
+	text-align: center;
+	margin-bottom: 45px;
+	width: 100%;
+	@media(min-width: @screen-lg) {
+		font-size: 50px;
 	}
 }
 
@@ -144,16 +159,33 @@ main {
 
 	#modules {
 		.make-row();
+		.center-block();
 		#reading-module {
-	    	.make-md-column(6);
+	    	.make-sm-column(6);
 		}
 		#els-module {
-	    	.make-md-column(6);
+	    	.make-sm-column(6);
+			@media(min-width: @screen-sm) {
+				border-left: solid 1px #eee;
+			}
 	  	}
 		#cl-badge {
 			width: 200px;
 			height: 148px;
 			.center-block();
+		}
+		@media(max-width: @screen-xs-max) {
+			padding: 15px 15px 15px 15px;
+			margin-top: 20px;
+		}
+		@media(min-width: @screen-sm) {
+			padding: 20px 15px 20px 15px;
+			width: 700px;
+			margin-top: 50px;
+		}
+		@media(min-width: @screen-lg) {
+			padding: 25px 15px 25px 15px;
+			width: 900px;
 		}
 	}
 }
