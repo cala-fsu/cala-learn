@@ -18,6 +18,7 @@ h2 {
 	margin-top: 0px;
 	font-family: "Open Sans";
 	font-weight: 300;
+	letter-spacing:-0.02em;
 	.center-block();
 	@media(max-width: @screen-xs-max) {
 		font-size: 20px;
@@ -41,8 +42,8 @@ h2 {
 	color: #2E3E50;
 	font-size: 40px;
 	font-weight: 300;
+	letter-spacing:-0.07em;
 	.center-block();
-	letter-spacing:-0.05em;
 	text-align: center;
 	margin-bottom: 45px;
 	width: 100%;
@@ -65,17 +66,12 @@ h5 {
 }
 
 header {
+	background: url("../images/ed_background.jpg") no-repeat;
 	@media(max-width: @screen-xs-max) {
-		background: url("../images/ed_background.jpg") no-repeat;
-		background-size: 800px 500px;
+
 	}
-	@media(min-width: @screen-sm) {
-		background: #666;
-		background-size: 1199px 800px;
-	}
-	@media(min-width: @screen-lg) {
-		background: url("../images/rainbow_dash_reading_by_lemonlimeman-d4hx588.gif") repeat-x;
-		background-size: 1600px 1000px;
+	@media(min-width: @screen-md) {
+		background-size: 100%;
 	}
 	.container-fixed();
 	
@@ -187,6 +183,11 @@ main {
 			padding: 25px 15px 25px 15px;
 			width: 900px;
 		}
+		margin-bottom: 60px;
+	}
+	
+	#modules p {
+		margin-bottom: 50px;
 	}
 }
 footer {

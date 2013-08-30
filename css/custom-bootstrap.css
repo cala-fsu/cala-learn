@@ -5925,6 +5925,7 @@ h2 {
   margin-top: 0px;
   font-family: "Open Sans";
   font-weight: 300;
+  letter-spacing: -0.02em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -5957,10 +5958,10 @@ h2 {
   color: #2E3E50;
   font-size: 40px;
   font-weight: 300;
+  letter-spacing: -0.07em;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: -0.05em;
   text-align: center;
   margin-bottom: 45px;
   width: 100%;
@@ -5975,27 +5976,18 @@ h3 {
   font-weight: 700;
 }
 header {
+  background: url("../images/ed_background.jpg") no-repeat;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (max-width: 767px) {
-  header {
-    background: url("../images/ed_background.jpg") no-repeat;
-    background-size: 800px 500px;
-  }
+  
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header {
-    background: #666;
-    background-size: 1199px 800px;
-  }
-}
-@media (min-width: 1200px) {
-  header {
-    background: url("../images/rainbow_dash_reading_by_lemonlimeman-d4hx588.gif") repeat-x;
-    background-size: 1600px 1000px;
+    background-size: 100%;
   }
 }
 header:before,
@@ -6191,6 +6183,7 @@ main #modules {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
 main #modules:before,
 main #modules:after {
@@ -6270,6 +6263,9 @@ main #modules #cl-badge {
     padding: 25px 15px 25px 15px;
     width: 900px;
   }
+}
+main #modules p {
+  margin-bottom: 50px;
 }
 footer {
   margin-right: auto;
