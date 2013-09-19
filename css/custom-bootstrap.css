@@ -5930,31 +5930,35 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+h3 {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
 @media (max-width: 767px) {
-  h2 {
+  #landing_page h2 {
     font-size: 20px;
     font-weight: 400;
   }
 }
 @media (min-width: 768px) {
-  h2 {
+  #landing_page h2 {
     font-size: 30px;
     width: 700px;
   }
 }
 @media (min-width: 992px) {
-  h2 {
+  #landing_page h2 {
     font-size: 35px;
     width: 900px;
   }
 }
 @media (min-width: 1200px) {
-  h2 {
+  #landing_page h2 {
     font-size: 40px;
     width: 1200px;
   }
 }
-#modules h2 {
+#landing_page #modules h2 {
   color: #2E3E50;
   font-size: 40px;
   font-weight: 300;
@@ -5967,28 +5971,11 @@ h2 {
   width: 100%;
 }
 @media (min-width: 1200px) {
-  #modules h2 {
+  #landing_page #modules h2 {
     font-size: 50px;
   }
 }
-footer #short-description h2 {
-  padding-bottom: 100px;
-}
-@media (min-width: 768px) {
-  footer #short-description h2 {
-    padding-top: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  footer #short-description h2 {
-    padding-top: 40px;
-  }
-}
-h3 {
-  font-family: "Open Sans";
-  font-weight: 700;
-}
-header {
+#landing_page header {
   background: url("../images/ed_background.jpg") no-repeat;
   margin-right: auto;
   margin-left: auto;
@@ -5999,12 +5986,12 @@ header {
   
 }
 @media (min-width: 992px) {
-  header {
+  #landing_page header {
     background-size: 100%;
   }
 }
-header:before,
-header:after {
+#landing_page header:before,
+#landing_page header:after {
   content: " ";
   /* 1 */
 
@@ -6012,11 +5999,11 @@ header:after {
   /* 2 */
 
 }
-header:after {
+#landing_page header:after {
   clear: both;
 }
-header:before,
-header:after {
+#landing_page header:before,
+#landing_page header:after {
   content: " ";
   /* 1 */
 
@@ -6024,25 +6011,23 @@ header:after {
   /* 2 */
 
 }
-header:after {
+#landing_page header:after {
   clear: both;
 }
-header #masthead {
+#landing_page header #masthead {
   margin-left: -15px;
   margin-right: -15px;
 }
 @media (min-width: 992px) {
-  header #masthead {
+  #landing_page header #masthead {
     width: 800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: #0ff;*/
-  
   }
 }
-header #masthead:before,
-header #masthead:after {
+#landing_page header #masthead:before,
+#landing_page header #masthead:after {
   content: " ";
   /* 1 */
 
@@ -6050,11 +6035,11 @@ header #masthead:after {
   /* 2 */
 
 }
-header #masthead:after {
+#landing_page header #masthead:after {
   clear: both;
 }
-header #masthead:before,
-header #masthead:after {
+#landing_page header #masthead:before,
+#landing_page header #masthead:after {
   content: " ";
   /* 1 */
 
@@ -6062,15 +6047,15 @@ header #masthead:after {
   /* 2 */
 
 }
-header #masthead:after {
+#landing_page header #masthead:after {
   clear: both;
 }
-header #masthead #brand {
+#landing_page header #masthead #brand {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
-  header #masthead #brand {
+  #landing_page header #masthead #brand {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -6078,13 +6063,13 @@ header #masthead #brand {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  header #masthead #brand {
+  #landing_page header #masthead #brand {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  header #masthead #brand {
+  #landing_page header #masthead #brand {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -6093,41 +6078,41 @@ header #masthead #brand {
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
-  header #masthead #brand {
+  #landing_page header #masthead #brand {
     float: left;
     width: 41.66666666666667%;
   }
 }
-header #masthead #brand img {
+#landing_page header #masthead #brand img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-header #masthead #brand #logo {
+#landing_page header #masthead #brand #logo {
   width: 125px;
   height: 125px;
 }
-header #masthead #brand #cala-learn {
+#landing_page header #masthead #brand #cala-learn {
   width: 290px;
   height: 72px;
 }
-header #masthead #brand #app-store {
+#landing_page header #masthead #brand #app-store {
   padding-top: 40px;
   width: 214px;
   height: 104px;
 }
-header #masthead #phone {
+#landing_page header #masthead #phone {
   display: none !important;
 }
-trheader #masthead #phone {
+tr#landing_page header #masthead #phone {
   display: none !important;
 }
-thheader #masthead #phone,
-tdheader #masthead #phone {
+th#landing_page header #masthead #phone,
+td#landing_page header #masthead #phone {
   display: none !important;
 }
 @media (min-width: 768px) {
-  header #masthead #phone {
+  #landing_page header #masthead #phone {
     display: block !important;
     position: relative;
     min-height: 1px;
@@ -6135,66 +6120,62 @@ tdheader #masthead #phone {
     padding-right: 15px;
     padding-top: 30px;
   }
-  trheader #masthead #phone {
+  tr#landing_page header #masthead #phone {
     display: table-row !important;
   }
-  thheader #masthead #phone,
-  tdheader #masthead #phone {
+  th#landing_page header #masthead #phone,
+  td#landing_page header #masthead #phone {
     display: table-cell !important;
   }
-  header #masthead #phone #phone-image {
+  #landing_page header #masthead #phone #phone-image {
     width: 320px;
     height: 394px;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  header #masthead #phone {
+  #landing_page header #masthead #phone {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  header #masthead #phone {
+  #landing_page header #masthead #phone {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
   }
-  header #masthead #phone #phone-image {
+  #landing_page header #masthead #phone #phone-image {
     width: 420px;
     height: 517px;
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
-  header #masthead #phone {
+  #landing_page header #masthead #phone {
     float: left;
     width: 58.333333333333336%;
   }
 }
-#short-description {
+#landing_page #short-description {
   background-color: #FB1D69;
   text-align: center;
 }
 @media (max-width: 767px) {
-  #short-description {
+  #landing_page #short-description {
     padding: 15px 15px 15px 15px;
   }
 }
 @media (min-width: 768px) {
-  #short-description {
+  #landing_page #short-description {
     padding: 20px 15px 20px 15px;
   }
 }
 @media (min-width: 1200px) {
-  #short-description {
+  #landing_page #short-description {
     padding: 25px 15px 25px 15px;
   }
 }
-footer #short-description {
-  background-color: #6296F4;
-  padding-bottom: 15px;
-}
-main #modules {
+#landing_page main #modules {
   margin-left: -15px;
   margin-right: -15px;
   display: block;
@@ -6202,8 +6183,8 @@ main #modules {
   margin-right: auto;
   margin-bottom: 60px;
 }
-main #modules:before,
-main #modules:after {
+#landing_page main #modules:before,
+#landing_page main #modules:after {
   content: " ";
   /* 1 */
 
@@ -6211,11 +6192,11 @@ main #modules:after {
   /* 2 */
 
 }
-main #modules:after {
+#landing_page main #modules:after {
   clear: both;
 }
-main #modules:before,
-main #modules:after {
+#landing_page main #modules:before,
+#landing_page main #modules:after {
   content: " ";
   /* 1 */
 
@@ -6223,39 +6204,39 @@ main #modules:after {
   /* 2 */
 
 }
-main #modules:after {
+#landing_page main #modules:after {
   clear: both;
 }
-main #modules #reading-module {
+#landing_page main #modules #reading-module {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  main #modules #reading-module {
+  #landing_page main #modules #reading-module {
     float: left;
     width: 50%;
   }
 }
-main #modules #els-module {
+#landing_page main #modules #els-module {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  main #modules #els-module {
+  #landing_page main #modules #els-module {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 768px) {
-  main #modules #els-module {
+  #landing_page main #modules #els-module {
     border-left: solid 1px #eee;
   }
 }
-main #modules #cl-badge {
+#landing_page main #modules #cl-badge {
   width: 200px;
   height: 148px;
   display: block;
@@ -6263,28 +6244,28 @@ main #modules #cl-badge {
   margin-right: auto;
 }
 @media (max-width: 767px) {
-  main #modules {
+  #landing_page main #modules {
     padding: 15px 15px 15px 15px;
     margin-top: 20px;
   }
 }
 @media (min-width: 768px) {
-  main #modules {
+  #landing_page main #modules {
     padding: 20px 15px 20px 15px;
     width: 700px;
     margin-top: 50px;
   }
 }
 @media (min-width: 1200px) {
-  main #modules {
+  #landing_page main #modules {
     padding: 25px 15px 25px 15px;
     width: 900px;
   }
 }
-main #modules p {
+#landing_page main #modules p {
   margin-bottom: 50px;
 }
-footer {
+#landing_page footer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -6292,8 +6273,8 @@ footer {
   padding-left: 0px;
   padding-right: 0px;
 }
-footer:before,
-footer:after {
+#landing_page footer:before,
+#landing_page footer:after {
   content: " ";
   /* 1 */
 
@@ -6301,11 +6282,11 @@ footer:after {
   /* 2 */
 
 }
-footer:after {
+#landing_page footer:after {
   clear: both;
 }
-footer:before,
-footer:after {
+#landing_page footer:before,
+#landing_page footer:after {
   content: " ";
   /* 1 */
 
@@ -6313,11 +6294,219 @@ footer:after {
   /* 2 */
 
 }
-footer:after {
+#landing_page footer:after {
   clear: both;
 }
-footer p {
+#landing_page footer #short-description {
+  background-color: #6296F4;
+  padding-bottom: 15px;
+}
+#landing_page footer #short-description h2 {
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  #landing_page footer #short-description h2 {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #landing_page footer #short-description h2 {
+    padding-top: 40px;
+  }
+}
+#landing_page footer p {
   text-align: left;
   color: #fff;
-  font-size: 10px;
+  font-size: 16.099999999999998px;
+  font-weight: 200;
+  line-height: 1.4;
 }
+#landing_page footer .copyright {
+  font-size: 10px;
+  padding-top: 50px;
+}
+/*THIS IS THE END TAG FOR THE LANDING PAGE BODY*/
+#announcements #masthead_2 {
+  background-color: #FB1D69;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  #announcements #masthead_2 #announcements_logo {
+    width: 290px;
+    height: 72px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  #announcements #masthead_2 {
+    margin-bottom: 50px;
+  }
+  #announcements #masthead_2 #announcements_logo {
+    width: 350px;
+    height: 90px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #announcements #masthead_2 h2 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  #announcements #masthead_2 h2 {
+    font-size: 70px;
+    padding-top: 100px;
+  }
+}
+#announcements #tricky_row {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#announcements #tricky_row:before,
+#announcements #tricky_row:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+#announcements #tricky_row:after {
+  clear: both;
+}
+#announcements #tricky_row:before,
+#announcements #tricky_row:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+#announcements #tricky_row:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  #announcements #tricky_row {
+    width: 700px;
+  }
+}
+#announcements #tricky_row #static_attribution {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #announcements #tricky_row #static_attribution {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+#announcements #tricky_row #static_attribution #logo {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 10px;
+}
+#announcements #tricky_row #article_container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  #announcements #tricky_row #article_container {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+@media (min-width: 768px) {
+  #announcements #tricky_row #article_container {
+    border-right: solid 1px #eee;
+  }
+}
+#announcements #tricky_row #article_container article header {
+  background: #fff;
+  font-family: "Open Sans";
+}
+#announcements #tricky_row #article_container article header time {
+  font-size: 70px;
+  font-weight: 300;
+  color: #ddd;
+  letter-spacing: -0.05em;
+}
+#announcements #tricky_row #article_container article header h1 {
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 600;
+  color: #666;
+  margin-top: -15px;
+}
+#announcements #tricky_row #article_container article header #byline {
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  #announcements #tricky_row #static_attribution {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #eee;
+  }
+  #announcements #tricky_row #static_attribution:before,
+  #announcements #tricky_row #static_attribution:after {
+    content: " ";
+    /* 1 */
+  
+    display: table;
+    /* 2 */
+  
+  }
+  #announcements #tricky_row #static_attribution:after {
+    clear: both;
+  }
+  #announcements #tricky_row #static_attribution:before,
+  #announcements #tricky_row #static_attribution:after {
+    content: " ";
+    /* 1 */
+  
+    display: table;
+    /* 2 */
+  
+  }
+  #announcements #tricky_row #static_attribution:after {
+    clear: both;
+  }
+  #announcements #tricky_row #static_attribution #logo {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 10px;
+  }
+  #announcements #tricky_row #static_attribution p {
+    position: relative;
+    float: left;
+    width: 75%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/*ANNOUNCEMENTS*/
