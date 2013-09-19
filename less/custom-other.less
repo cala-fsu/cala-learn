@@ -222,19 +222,25 @@ li {
 				}
 				@media(min-width: @screen-lg) {
 				padding-top: 40px;
+				width: 900px;
 				}
 			}
 		}
 		p {
 			text-align: left;
 			color: #fff;
-			font-size: 16.099999999999998px;
-			font-weight: 200;
-			line-height: 1.4;
+			@media(min-width: @screen-sm) {
+				width: 700px;
+			}
+			@media(min-width: @screen-md) {
+				width: 900px;
+			}
+			.center-block();
 		}
 		.copyright {
 			font-size: 10px;
 			padding-top: 50px;
+			text-align: center;
 		}
 	
 	}

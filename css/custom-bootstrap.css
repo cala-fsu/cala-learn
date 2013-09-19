@@ -6335,18 +6335,30 @@ td#landing_page header #masthead #phone {
 @media (min-width: 1200px) {
   #landing_page footer #short-description h2 {
     padding-top: 40px;
+    width: 900px;
   }
 }
 #landing_page footer p {
   text-align: left;
   color: #fff;
-  font-size: 16.099999999999998px;
-  font-weight: 200;
-  line-height: 1.4;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #landing_page footer p {
+    width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  #landing_page footer p {
+    width: 900px;
+  }
 }
 #landing_page footer .copyright {
   font-size: 10px;
   padding-top: 50px;
+  text-align: center;
 }
 /*THIS IS THE END TAG FOR THE LANDING PAGE BODY*/
 #announcements #masthead_2 {
