@@ -173,6 +173,12 @@ li {
 		#modules {
 			.make-row();
 			.center-block();
+			#first_paragraph {
+				@media(max-width: 767px) {
+					padding-right: 15px;
+					padding-left: 15px;
+				}
+			}
 			#reading-module {
 		    	.make-sm-column(6);
 				@media(min-width: @screen-sm){

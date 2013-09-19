@@ -6226,6 +6226,12 @@ td#landing_page header #masthead #phone {
 #landing_page main #modules:after {
   clear: both;
 }
+@media (max-width: 767px) {
+  #landing_page main #modules #first_paragraph {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
 #landing_page main #modules #reading-module {
   position: relative;
   min-height: 1px;
