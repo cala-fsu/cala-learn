@@ -268,8 +268,12 @@ h5 {
 		@media(min-width: @screen-sm) {
 			width: 700px;
 		}
+		@media(min-width: @screen-lg) {
+			width: 900px;
+		}
 		#static_attribution {
 			.make-sm-column(4);
+			.make-lg-column(3);
 			#logo {
 				width: 125px;
 				height: 125px;
@@ -278,6 +282,7 @@ h5 {
 		}
 		#article_container {
 			.make-sm-column(8);
+			.make-lg-column(9);
 			margin-bottom: 40px;
 			@media(min-width: @screen-sm) {
 				border-right: solid 1px #eee;
@@ -286,9 +291,10 @@ h5 {
 				background: #fff;
 				font-family: "Open Sans";
 				time {
+					font-family: 'Lato';
+					font-weight: 100;
 					font-size: 70px;
-					font-weight: 300;
-					color: #ddd;
+					color: #cde;
 					letter-spacing: -0.05em;
 				}
 				h1 {

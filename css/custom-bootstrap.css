@@ -6397,6 +6397,11 @@ td#landing_page header #masthead #phone {
     width: 700px;
   }
 }
+@media (min-width: 1200px) {
+  #announcements #tricky_row {
+    width: 900px;
+  }
+}
 #announcements #tricky_row #static_attribution {
   position: relative;
   min-height: 1px;
@@ -6407,6 +6412,12 @@ td#landing_page header #masthead #phone {
   #announcements #tricky_row #static_attribution {
     float: left;
     width: 33.33333333333333%;
+  }
+}
+@media (min-width: 1200px) {
+  #announcements #tricky_row #static_attribution {
+    float: left;
+    width: 25%;
   }
 }
 #announcements #tricky_row #static_attribution #logo {
@@ -6427,6 +6438,12 @@ td#landing_page header #masthead #phone {
     width: 66.66666666666666%;
   }
 }
+@media (min-width: 1200px) {
+  #announcements #tricky_row #article_container {
+    float: left;
+    width: 75%;
+  }
+}
 @media (min-width: 768px) {
   #announcements #tricky_row #article_container {
     border-right: solid 1px #eee;
@@ -6437,9 +6454,10 @@ td#landing_page header #masthead #phone {
   font-family: "Open Sans";
 }
 #announcements #tricky_row #article_container article header time {
+  font-family: 'Lato';
+  font-weight: 100;
   font-size: 70px;
-  font-weight: 300;
-  color: #ddd;
+  color: #cde;
   letter-spacing: -0.05em;
 }
 #announcements #tricky_row #article_container article header h1 {
