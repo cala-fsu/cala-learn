@@ -28,13 +28,18 @@ h3 {
 }
 
 h4 {
-	
+	font-family: "Open Sans";
+	font-weight: 600;
+	margin-top: 20px;
+	color: #789;
 }
 
 h5 {
 	
 }
-
+li {
+	padding-bottom: 5px;
+}
 #landing_page {
 	
 	h2 {
@@ -53,6 +58,14 @@ h5 {
 		@media(min-width: @screen-lg) {
 			font-size: 40px;
 			width: 1200px;
+		}
+	}
+	h4 {
+		@media(max-width: @screen-xs-max) {
+			font-size: 20px;
+		}
+		@media(min-width: @screen-sm) {
+			font-size: 23px;
 		}
 	}
 
@@ -162,20 +175,25 @@ h5 {
 			.center-block();
 			#reading-module {
 		    	.make-sm-column(6);
+				@media(min-width: @screen-sm){
+					padding-right: 30px;
+				}
 			}
 			#els-module {
 		    	.make-sm-column(6);
 				@media(min-width: @screen-sm) {
 					border-left: solid 1px #eee;
+					padding-left: 30px;
+					padding-bottom: 50px;
 				}
 		  	}
 			#cl-badge {
 				width: 200px;
 				height: 148px;
+				margin-top: 30px;
 				.center-block();
 			}
 			@media(max-width: @screen-xs-max) {
-				padding: 15px 15px 15px 15px;
 				margin-top: 20px;
 			}
 			@media(min-width: @screen-sm) {
@@ -188,10 +206,6 @@ h5 {
 				width: 900px;
 			}
 			margin-bottom: 60px;
-		}
-	
-		#modules p {
-			margin-bottom: 50px;
 		}
 	}
 	footer {

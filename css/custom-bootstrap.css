@@ -5934,6 +5934,15 @@ h3 {
   font-family: "Open Sans";
   font-weight: 700;
 }
+h4 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  margin-top: 20px;
+  color: #789;
+}
+li {
+  padding-bottom: 5px;
+}
 @media (max-width: 767px) {
   #landing_page h2 {
     font-size: 20px;
@@ -5956,6 +5965,16 @@ h3 {
   #landing_page h2 {
     font-size: 40px;
     width: 1200px;
+  }
+}
+@media (max-width: 767px) {
+  #landing_page h4 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #landing_page h4 {
+    font-size: 23px;
   }
 }
 #landing_page #modules h2 {
@@ -6219,6 +6238,11 @@ td#landing_page header #masthead #phone {
     width: 50%;
   }
 }
+@media (min-width: 768px) {
+  #landing_page main #modules #reading-module {
+    padding-right: 30px;
+  }
+}
 #landing_page main #modules #els-module {
   position: relative;
   min-height: 1px;
@@ -6234,18 +6258,20 @@ td#landing_page header #masthead #phone {
 @media (min-width: 768px) {
   #landing_page main #modules #els-module {
     border-left: solid 1px #eee;
+    padding-left: 30px;
+    padding-bottom: 50px;
   }
 }
 #landing_page main #modules #cl-badge {
   width: 200px;
   height: 148px;
+  margin-top: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 @media (max-width: 767px) {
   #landing_page main #modules {
-    padding: 15px 15px 15px 15px;
     margin-top: 20px;
   }
 }
@@ -6261,9 +6287,6 @@ td#landing_page header #masthead #phone {
     padding: 25px 15px 25px 15px;
     width: 900px;
   }
-}
-#landing_page main #modules p {
-  margin-bottom: 50px;
 }
 #landing_page footer {
   margin-right: auto;
