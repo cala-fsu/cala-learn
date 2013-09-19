@@ -6478,10 +6478,19 @@ td#landing_page header #masthead #phone {
 }
 #announcements #tricky_row #article_container article header time {
   font-family: 'Lato';
-  font-weight: 300;
   font-size: 70px;
   color: #cde;
   letter-spacing: -0.05em;
+}
+@media (max-width: 767px) {
+  #announcements #tricky_row #article_container article header time {
+    font-weight: 300;
+  }
+}
+@media (min-width: 768px) {
+  #announcements #tricky_row #article_container article header time {
+    font-weight: 100;
+  }
 }
 #announcements #tricky_row #article_container article header h1 {
   font-family: "Open Sans";

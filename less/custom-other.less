@@ -306,10 +306,15 @@ li {
 				font-family: "Open Sans";
 				time {
 					font-family: 'Lato';
-					font-weight: 300;
 					font-size: 70px;
 					color: #cde;
 					letter-spacing: -0.05em;
+					@media(max-width: @screen-xs-max) {
+						font-weight: 300;
+					}
+					@media(min-width: @screen-sm) {
+						font-weight: 100;
+					}
 				}
 				h1 {
 					font-family: "Open Sans";
