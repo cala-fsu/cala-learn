@@ -6366,6 +6366,10 @@ td#landing_page header #masthead #phone {
   padding-top: 50px;
   text-align: center;
 }
+#landing_page footer .copyright #official-logo {
+  width: 50px;
+  height: 22px;
+}
 #landing_page footer .btn-primary {
   background-color: #FB59B8;
   margin-top: 30px;
