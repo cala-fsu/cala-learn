@@ -6366,6 +6366,17 @@ td#landing_page header #masthead #phone {
   padding-top: 50px;
   text-align: center;
 }
+#landing_page footer .btn-primary {
+  background-color: #FB59B8;
+  margin-top: 30px;
+}
+#landing_page footer .btn-primary:hover,
+#landing_page footer .btn-primary:focus,
+#landing_page footer .btn-primary:active,
+#landing_page footer .btn-primary.active,
+#landing_page footer .open .dropdown-toggle.btn-primary {
+  background-color: #DD4EA6;
+}
 /*THIS IS THE END TAG FOR THE LANDING PAGE BODY*/
 #announcements #masthead_2 {
   background-color: #FB1D69;
@@ -6497,18 +6508,9 @@ td#landing_page header #masthead #phone {
 #announcements #tricky_row #article_container article header time {
   font-family: 'Lato';
   font-size: 70px;
+  font-weight: 300;
   color: #cde;
   letter-spacing: -0.05em;
-}
-@media (max-width: 767px) {
-  #announcements #tricky_row #article_container article header time {
-    font-weight: 300;
-  }
-}
-@media (min-width: 768px) {
-  #announcements #tricky_row #article_container article header time {
-    font-weight: 100;
-  }
 }
 #announcements #tricky_row #article_container article header h1 {
   font-family: "Open Sans";

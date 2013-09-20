@@ -248,7 +248,17 @@ li {
 			padding-top: 50px;
 			text-align: center;
 		}
-	
+		.btn-primary {
+		  	background-color: #FB59B8;
+			margin-top: 30px;
+		}
+		.btn-primary:hover,
+		.btn-primary:focus,
+		.btn-primary:active,
+		.btn-primary.active,
+		.open .dropdown-toggle.btn-primary {
+		  	background-color: #DD4EA6;
+		}
 	}
 
 
@@ -319,14 +329,9 @@ li {
 				time {
 					font-family: 'Lato';
 					font-size: 70px;
+					font-weight: 300;
 					color: #cde;
 					letter-spacing: -0.05em;
-					@media(max-width: @screen-xs-max) {
-						font-weight: 300;
-					}
-					@media(min-width: @screen-sm) {
-						font-weight: 100;
-					}
 				}
 				h1 {
 					font-family: "Open Sans";
