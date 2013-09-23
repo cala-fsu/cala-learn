@@ -5958,13 +5958,13 @@ li {
 @media (min-width: 992px) {
   #landing_page h2 {
     font-size: 35px;
-    width: 900px;
+    width: 850px;
   }
 }
 @media (min-width: 1200px) {
   #landing_page h2 {
     font-size: 40px;
-    width: 1200px;
+    width: 1000px;
   }
 }
 @media (max-width: 767px) {
