@@ -1,18 +1,5 @@
 /* This is where we put our custom changes. */
 
-/*@our_base_color: #f938ab;
-
-body {
-	background-color: @our_base_color;
-}
-
-#short-description {
-	h2 {
-		color: @our_base_color;
-		.hide-text();
-	}
-}*/
-
 h2 {
 	color: #fff;
 	margin-top: 0px;
@@ -40,6 +27,7 @@ h5 {
 li {
 	padding-bottom: 5px;
 }
+
 #landing_page {
 	
 	h2 {
@@ -94,7 +82,6 @@ li {
 		.container-fixed();
 	
 		#masthead {
-		
 			@media(min-width: @screen-md) {
 				width: 800px;
 				.center-block();
@@ -169,7 +156,6 @@ li {
 	}
 
 	main {
-
 		#modules {
 			.make-row();
 			.center-block();
@@ -193,7 +179,7 @@ li {
 					padding-bottom: 50px;
 				}
 		  	}
-			#cl-badge {
+			.cl-badge {
 				width: 200px;
 				height: 148px;
 				margin-top: 30px;
@@ -214,24 +200,38 @@ li {
 			margin-bottom: 60px;
 		}
 	}
+
 	footer {
 		.container-fixed();
 		padding-left: 0px;
 		padding-right: 0px;
-		#short-description {
-			background-color: #6296F4;
-			padding-bottom: 15px;
-			h2 {
-				padding-bottom: 50px;
-				@media(min-width: @screen-sm) {
-				padding-top: 30px;
-				}
-				@media(min-width: @screen-lg) {
-				padding-top: 40px;
-				width: 900px;
-				}
-			}
-		}
+
+    #footer-description {
+      background-color: #6296F4;
+      text-align: center;
+
+      @media(max-width: @screen-xs-max) {
+        padding: 15px 15px 15px 15px;
+      }
+      @media(min-width: @screen-sm) {
+        padding: 20px 15px 15px 15px;
+      }
+      @media(min-width: @screen-lg) {
+        padding: 25px 15px 15px 15px;
+      }
+
+      h2 {
+        padding-bottom: 50px;
+        @media(min-width: @screen-sm) {
+          padding-top: 30px;
+        }
+        @media(min-width: @screen-lg) {
+          padding-top: 40px;
+          width: 900px;
+        }
+      }
+    }
+
 		p {
 			text-align: left;
 			color: #fff;
@@ -264,13 +264,11 @@ li {
 		  	background-color: #DD4EA6;
 		}
 	}
-
-
 }/*THIS IS THE END TAG FOR THE LANDING PAGE BODY*/
 
 #announcements {
 	
-	#masthead_2 {
+	header {
 		background-color: #FB1D69;
 		text-align: center;
 		margin-bottom: 20px;
@@ -302,7 +300,8 @@ li {
 			}
 		}
 	}
-	#tricky_row {
+
+	main {
 		.make-row();
 		.center-block();
 		@media(min-width: @screen-sm) {
@@ -320,14 +319,14 @@ li {
 				margin-bottom: 10px;
 			}
 		}
-		#article_container {
+		article {
 			.make-sm-column(8);
 			.make-lg-column(9);
 			margin-bottom: 40px;
 			@media(min-width: @screen-sm) {
 				border-right: solid 1px #eee;
 			}
-			article header {
+			header {
 				background: #fff;
 				font-family: "Open Sans";
 				time {
@@ -371,23 +370,4 @@ li {
 		}
 	}
 	
-}/*ANNOUNCEMENTS*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} /*ANNOUNCEMENTS*/
