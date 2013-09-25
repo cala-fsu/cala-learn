@@ -1,31 +1,41 @@
 ---
-layout: default
-title: CALA Learn Annoucements
-id: in_app_announcements
 ---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CALA Learn Announcements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning modules from the Center for Advancement of Learning and Assessment at Florida State University.">
+		<link href="css/custom-bootstrap.css" rel="stylesheet" media="screen">
+  </head>
 
-<header>
-  <h1>Announcements</h1>
-</header>
+  <body id="in_app_announcements">
 
-<main role="main">
+    <header>
+      <h1>Announcements</h1>
+    </header>
 
-  {% for post in site.posts %}
-    <article>
-      <header>
-        <time pubdate datetime="{{ post.date | date: '%m-%d-%y' }}" title="{{ post.date | date: '%B %d, %Y' }}">{{ post.date | date: "%x" }}</time>
+    <main role="main">
 
-        <h1 class="headline">{{ post.title }}</h1>
+      {% for post in site.posts %}
+        <article>
+          <header>
+            <time pubdate datetime="{{ post.date | date: '%m-%d-%y' }}" title="{{ post.date | date: '%B %d, %Y' }}">{{ post.date | date: "%x" }}</time>
 
-        <div class="byline">
-          <address class="author">By {{ post.author }}</address> 
-        </div>
-      </header>
+            <h1 class="headline">{{ post.title }}</h1>
 
-      <div class="article-content">
-        {{ post.content }}
-      </div>
-    </article>
-    <hr />
-  {% endfor %}
-</main>
+            <div class="byline">
+              <address class="author">By {{ post.author }}</address> 
+            </div>
+          </header>
+
+          <div class="article-content">
+            {{ post.content }}
+          </div>
+        </article>
+        <hr />
+      {% endfor %}
+    </main>
+  </body>
+</html>
