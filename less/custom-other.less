@@ -327,6 +327,8 @@ li {
 				border-right: solid 1px #eee;
 			}
 			header {
+        text-align: left;
+        margin-bottom: 0;
 				background: #fff;
 				font-family: "Open Sans";
 				time {
@@ -347,6 +349,18 @@ li {
 					font-weight: 700;
 				}
 			}
+      .article-content {
+        p {
+          margin-bottom: @line-height-computed;
+          font-size: (@font-size-base * 1.15);
+          font-weight: 200;
+          line-height: 1.4;
+
+          @media (min-width: 768px) {
+            font-size: (@font-size-base * 1.5);
+          }
+        }
+      }
 		}
 		@media(max-width: 767px) {
 			#static_attribution {
