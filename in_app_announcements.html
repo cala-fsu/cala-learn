@@ -1,0 +1,31 @@
+---
+layout: default
+title: CALA Learn Annoucements
+id: in_app_announcements
+---
+
+<header>
+  <h1>Announcements</h1>
+</header>
+
+<main role="main">
+
+  {% for post in site.posts %}
+    <article>
+      <header>
+        <time pubdate datetime="{{ post.date | date: '%m-%d-%y' }}" title="{{ post.date | date: '%B %d, %Y' }}">{{ post.date | date: "%x" }}</time>
+
+        <h1 class="headline">{{ post.title }}</h1>
+
+        <div class="byline">
+          <address class="author">By {{ post.author }}</address> 
+        </div>
+      </header>
+
+      <div class="article-content">
+        {{ post.content }}
+      </div>
+    </article>
+    <hr />
+  {% endfor %}
+</main>
