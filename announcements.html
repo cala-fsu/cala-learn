@@ -1,61 +1,41 @@
 ---
+layout: default
+title: CALA Learn Annoucements
+id: announcements
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>CALA Learn Announcements</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Learning modules from the Center for Advancement of Learning and Assessment at Florida State University.">
 
-    <!-- Bootstrap -->
-    <link href="css/custom-bootstrap.css" rel="stylesheet" media="screen">
+<header>
+  <h2>Announcements</h2>
+  <img id="announcements_logo" src="images/cala_learn_title.png" alt="cala learn">
+</header>
 
-    <!-- CALA styles -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300|Lato:100,300' rel='stylesheet' type='text/css'>
-  </head>
+<main role="main">
 
-  <body id="announcements">
+  {% for post in site.posts %}
+    <article>
+      <header>
+        <!-- <time pubdate datetime="2011-08-28" title="August 28th, 2011">9/24/13</time> -->
+        <time pubdate datetime="{{ post.date | date: '%m-%d-%y' }}" title="{{ post.date | date: '%B %d, %Y' }}">{{ post.date | date: "%x" }}</time>
 
-    <header>
-      <h2>Announcements</h2>
-      <img id="announcements_logo" src="images/cala_learn_title.png" alt="cala learn">
-    </header>
+        <h1 class="headline">{{ post.title }}</h1>
 
-    <main role="main">
+        <div class="byline">
+          <address class="author">By {{ post.author }}</address> 
+        </div>
+      </header>
 
-      {% for post in site.posts %}
-        <article>
-          <header>
-            <!-- <time pubdate datetime="2011-08-28" title="August 28th, 2011">9/24/13</time> -->
-            <time pubdate datetime="{{ post.date | date: "%m-%d-%y" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%x" }}</time>
-
-            <h1 class="headline">{{ post.title }}</h1>
-
-            <div class="byline">
-              <address class="author">By {{ post.author }}</address> 
-            </div>
-          </header>
-
-          <div class="article-content">
-            {{ post.content }}
-          </div>
-        </article>
-      {% endfor %}
-
-      <div id="static_attribution">
-        <img id="logo" alt="CALA Learn" src="images/cala_learn_logo.png">
-        <p>CALA Learn is a product of the <a href="http://www.cala.fsu.edu">Center for Advancement of Learning and Assessment</a>
-        at the Florida State University. &copy;2013 All Rights Reserved.
-        Questions can be directed to:<br>
-        <strong>email: <a href="mailto:info@cala.fsu.edu">info@cala.fsu.edu</a></strong><br>
-        <strong>phone: 850-645-2252</strong></p>
+      <div class="article-content">
+        {{ post.content }}
       </div>
-    </main>
+    </article>
+  {% endfor %}
 
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+  <div id="static_attribution">
+    <img id="logo" alt="CALA Learn" src="images/cala_learn_logo.png">
+    <p>CALA Learn is a product of the <a href="http://www.cala.fsu.edu">Center for Advancement of Learning and Assessment</a>
+    at the Florida State University. &copy;2013 All Rights Reserved.
+    Questions can be directed to:<br>
+    <strong>email: <a href="mailto:info@cala.fsu.edu">info@cala.fsu.edu</a></strong><br>
+    <strong>phone: 850-645-2252</strong></p>
+  </div>
+</main>
