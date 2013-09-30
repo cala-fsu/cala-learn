@@ -126,14 +126,14 @@ li {
 					.make-sm-column(6);
 					padding-top: 30px;
 					#phone-image {
-						width: 252px;
+						width: 343px;
 						height: 394px;
 					}
 				}	
 				@media(min-width: @screen-lg) {
 					.make-lg-column(7);
 					#phone-image {
-					width: 330px;
+					width: 450px;
 					height: 517px;
 					}	
 				}
@@ -222,6 +222,9 @@ li {
 
       h2 {
         padding-bottom: 50px;
+		@media(max-width: @screen-xs-max) {
+			padding-bottom: 35px;
+		}
         @media(min-width: @screen-sm) {
           padding-top: 30px;
         }
@@ -252,7 +255,7 @@ li {
 				height: 22px;
 			}
 			a {
-				color: #fcc;
+				color: #fff;
 			}
 		}
 		.btn-primary {
