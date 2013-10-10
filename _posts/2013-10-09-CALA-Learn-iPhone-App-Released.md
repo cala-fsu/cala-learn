@@ -1,5 +1,5 @@
 ---
-title: CALA Releases Mobile App for FTCE Learning Modules
+title: CALA Learn iPhone App Released
 author: Karen Hawkins
 ---
 
